@@ -1,0 +1,42 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .landing-page {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      animation: fadeOut 0.5s forwards;
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; }
+    }
+
+    .logo, .text, button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      animation: fadeIn 1s forwards 0.5s;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    button {
+      margin-top: 20px;
+      cursor: pointer;
+    }
